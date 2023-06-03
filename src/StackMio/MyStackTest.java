@@ -1,13 +1,13 @@
 package StackMio;
 
-import LinkedLista.LinkedLista;
+import LinkedList.LinkedList;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyStackTest {
 
-    MyStack<Integer>stackll= new LinkedLista<Integer>();
+    MyStack<Integer>stackll= new LinkedList<Integer>();
     @Test
     void push() {
         stackll.push(10);

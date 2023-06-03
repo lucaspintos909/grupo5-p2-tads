@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4f4535e-68c0-4c3f-b9d2-d6c4e1a85cbd" name="Changes" comment="Subo todo">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tads.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLista/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLista/Mylist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLista/MylistTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QueueMio/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QueueMio/MyQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SBT/SBT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackMio/EmptyStackException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackMio/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StackMio/MyStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +59,12 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "Merging main",
     "last_opened_file_path": "C:/Users/Juanm/Desktop/Tads",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
@@ -185,16 +198,8 @@
       <workItem from="1685590616270" duration="6975000" />
       <workItem from="1685600321367" duration="2984000" />
       <workItem from="1685603352062" duration="15000" />
-      <workItem from="1685739899145" duration="11161000" />
+      <workItem from="1685739899145" duration="8826000" />
     </task>
-    <task id="LOCAL-00001" summary="Subo todo">
-      <created>1685825936479</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1685825936479</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,11 +221,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Subo todo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Tads$StackMio_Main.ic" NAME="StackMio.Main Coverage Results" MODIFIED="1685511971380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>StackMio.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/Tads$MylistTest_size.ic" NAME="MylistTest.size Coverage Results" MODIFIED="1685747520969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>LinkedLista.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Tads$StackMio_Main.ic" NAME="StackMio.Main Coverage Results" MODIFIED="1685511971380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>StackMio.*</FILTER>
     </SUITE>
   </component>
 </project>

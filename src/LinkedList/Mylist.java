@@ -1,4 +1,4 @@
-package LinkedLista;
+package LinkedList;
 
 public interface Mylist <T>{
 

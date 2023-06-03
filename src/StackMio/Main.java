@@ -1,10 +1,10 @@
 package StackMio;
-import LinkedLista.LinkedLista;
+import LinkedList.LinkedList;
 
 public class Main {
 
     public static void main(String[] args) throws EmptyStackException {
-        MyStack<Integer>stackll = new LinkedLista<Integer>();
+        MyStack<Integer>stackll = new LinkedList<Integer>();
         stackll.push(7);
         stackll.push(9);
         stackll.push(1);

@@ -1,4 +1,4 @@
-package LinkedLista;
+package LinkedList;
 
 import org.junit.jupiter.api.Test;
 
@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MylistTest {
 
-    Mylist<Integer>listll=new LinkedLista<Integer>();
+    Mylist<Integer>listll=new LinkedList<Integer>();
     @Test
     void add() {
         listll.add(10);

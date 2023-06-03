@@ -1,11 +1,11 @@
 package QueueMio;
 
-import LinkedLista.LinkedLista;
+import LinkedList.LinkedList;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyQueueTest {
-    MyQueue<Integer> queuell = new LinkedLista<>();
+    MyQueue<Integer> queuell = new LinkedList<>();
 
     @Test
     void enqueue() {

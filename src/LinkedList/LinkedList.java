@@ -1,19 +1,17 @@
-package LinkedLista;
+package LinkedList;
 
 import QueueMio.EmptyQueueException;
 import QueueMio.MyQueue;
 import StackMio.EmptyStackException;
 import StackMio.MyStack;
 
-import java.util.function.Supplier;
 
-
-public class LinkedLista<T> implements MyStack<T>, MyQueue,Mylist<T> {
+public class LinkedList<T> implements MyStack<T>, MyQueue,Mylist<T> {
     public Nodo<T> head;
     public Nodo<T> tail;
     public int size;
 
-    public LinkedLista() {
+    public LinkedList() {
         this.size = 0;
     }
 

@@ -1,10 +1,8 @@
-package LinkedLista;
-
-import java.util.Scanner;
+package LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedLista<Integer> listo = new LinkedLista<Integer>();
+        LinkedList<Integer> listo = new LinkedList<Integer>();
         listo.add(3);
         listo.add(2);
         listo.add(8);

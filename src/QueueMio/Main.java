@@ -1,10 +1,10 @@
 package QueueMio;
-import LinkedLista.LinkedLista;
+import LinkedList.LinkedList;
 
 
 public class Main {
     public static void main(String[] args) throws EmptyQueueException {
-        MyQueue<Integer> stackll = new LinkedLista<>();
+        MyQueue<Integer> stackll = new LinkedList<>();
         stackll.enqueue(7);
         stackll.enqueue(9);
         stackll.enqueue(1);
