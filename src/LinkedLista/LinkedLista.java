@@ -7,6 +7,7 @@ import StackMio.MyStack;
 
 import java.util.function.Supplier;
 
+
 public class LinkedLista<T> implements MyStack<T>, MyQueue,Mylist<T> {
     public Nodo<T> head;
     public Nodo<T> tail;
