@@ -1,13 +1,13 @@
-package StackMio;
-
-import LinkedList.LinkedList;
+import uy.edu.um.prog2.adt.LinkedList.LinkedList;
 import org.junit.jupiter.api.Test;
+import uy.edu.um.prog2.adt.StackMio.EmptyStackException;
+import uy.edu.um.prog2.adt.StackMio.MyStack;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyStackTest {
 
-    MyStack<Integer>stackll= new LinkedList<Integer>();
+    MyStack<Integer> stackll= new LinkedList<Integer>();
     @Test
     void push() {
         stackll.push(10);

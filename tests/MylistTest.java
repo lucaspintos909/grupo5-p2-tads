@@ -1,12 +1,12 @@
-package LinkedList;
-
 import org.junit.jupiter.api.Test;
+import uy.edu.um.prog2.adt.LinkedList.LinkedList;
+import uy.edu.um.prog2.adt.LinkedList.Mylist;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MylistTest {
 
-    Mylist<Integer>listll=new LinkedList<Integer>();
+    Mylist<Integer> listll=new LinkedList<Integer>();
     @Test
     void add() {
         listll.add(10);

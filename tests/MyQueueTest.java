@@ -1,11 +1,12 @@
-package QueueMio;
-
-import LinkedList.LinkedList;
+import uy.edu.um.prog2.adt.LinkedList.LinkedList;
 import org.junit.jupiter.api.Test;
+import uy.edu.um.prog2.adt.QueueMio.EmptyQueueException;
+import uy.edu.um.prog2.adt.QueueMio.MyQueue;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyQueueTest {
-    MyQueue<Integer> queuell = new LinkedList<>();
+    MyQueue<Integer> queuell = new LinkedList<Integer>();
 
     @Test
     void enqueue() {
@@ -43,7 +44,7 @@ class MyQueueTest {
     @Test
     void get() {
         queuell.enqueue(7);
-
+        System.out.println(queuell.get(0));
         assertEquals(queuell.get(0),7);
     }
 

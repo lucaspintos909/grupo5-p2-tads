@@ -1,4 +1,4 @@
-package StackMio;
+package uy.edu.um.prog2.adt.StackMio;
 
 public interface MyStack <T>{
     void push(T value);

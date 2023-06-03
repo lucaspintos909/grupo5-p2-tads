@@ -4,21 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f4535e-68c0-4c3f-b9d2-d6c4e1a85cbd" name="Changes" comment="Subo todo">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tads.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedLista/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedLista/Mylist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LinkedLista/MylistTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QueueMio/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QueueMio/MyQueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SBT/SBT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackMio/EmptyStackException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackMio/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StackMio/MyStackTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="a4f4535e-68c0-4c3f-b9d2-d6c4e1a85cbd" name="Changes" comment="Cambiando nombre de LinkedLista a LinkedList">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/SBT/SearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tads.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/LinkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/Mylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/LinkedList/Mylist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList/MylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MylistTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueueMio/EmptyQueueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/QueueMio/EmptyQueueException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueueMio/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueueMio/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/QueueMio/MyQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueueMio/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MyQueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SBT/SBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/SBT/SBT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackMio/EmptyStackException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/StackMio/EmptyStackException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackMio/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackMio/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/StackMio/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackMio/MyStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MyStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/SBT/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/SBT/TreeNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +63,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/Juanm/Desktop/Tads",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -81,100 +85,86 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="LinkedLista" />
       <recent name="StackMio" />
       <recent name="QueueMio" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MylistTest.size">
-    <configuration name="MyStackTest.pop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in Tads">
+    <configuration name="All in Tads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tads" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tads" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="StackMio.*" />
+          <option name="PATTERN" value="QueueMio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="StackMio" />
-      <option name="MAIN_CLASS_NAME" value="StackMio.MyStackTest" />
-      <option name="METHOD_NAME" value="pop" />
+      <option name="PACKAGE_NAME" value="QueueMio" />
+      <option name="MAIN_CLASS_NAME" value="QueueMio.MyQueueTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyQueueTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="QueueMio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="QueueMio" />
+      <option name="MAIN_CLASS_NAME" value="QueueMio.MyQueueTest" />
+      <option name="METHOD_NAME" value="get" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MylistTest.contains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MylistTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tads" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LinkedLista.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LinkedLista" />
-      <option name="MAIN_CLASS_NAME" value="LinkedLista.MylistTest" />
-      <option name="METHOD_NAME" value="contains" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MylistTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MylistTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MylistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tads" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LinkedLista.*" />
+          <option name="PATTERN" value="LinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="LinkedLista" />
-      <option name="MAIN_CLASS_NAME" value="LinkedLista.MylistTest" />
-      <option name="METHOD_NAME" value="remove" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MylistTest.reomve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Tads" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LinkedLista.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LinkedLista" />
-      <option name="MAIN_CLASS_NAME" value="LinkedLista.MylistTest" />
-      <option name="METHOD_NAME" value="reomve" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MylistTest.size" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Tads" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LinkedLista.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LinkedLista" />
-      <option name="MAIN_CLASS_NAME" value="LinkedLista.MylistTest" />
-      <option name="METHOD_NAME" value="size" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="LinkedList" />
+      <option name="MAIN_CLASS_NAME" value="LinkedList.MylistTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MylistTest.size" />
-        <item itemvalue="JUnit.MylistTest.contains" />
-        <item itemvalue="JUnit.MylistTest.remove" />
-        <item itemvalue="JUnit.MyStackTest.pop" />
-        <item itemvalue="JUnit.MylistTest.reomve" />
+        <item itemvalue="JUnit.All in Tads" />
+        <item itemvalue="JUnit.MylistTest (1)" />
+        <item itemvalue="JUnit.MyQueueTest.get" />
+        <item itemvalue="JUnit.MyQueueTest" />
+        <item itemvalue="JUnit.MylistTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +189,16 @@
       <workItem from="1685600321367" duration="2984000" />
       <workItem from="1685603352062" duration="15000" />
       <workItem from="1685739899145" duration="8826000" />
+      <workItem from="1685832655204" duration="2312000" />
     </task>
+    <task id="LOCAL-00001" summary="Cambiando nombre de LinkedLista a LinkedList">
+      <created>1685833009881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685833009881</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +217,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Subo todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Subo todo" />
+    <MESSAGE value="Cambiando nombre de LinkedLista a LinkedList" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambiando nombre de LinkedLista a LinkedList" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Tads$MylistTest_size.ic" NAME="MylistTest.size Coverage Results" MODIFIED="1685747520969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

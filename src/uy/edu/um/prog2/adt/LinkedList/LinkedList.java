@@ -1,12 +1,12 @@
-package LinkedList;
+package uy.edu.um.prog2.adt.LinkedList;
 
-import QueueMio.EmptyQueueException;
-import QueueMio.MyQueue;
-import StackMio.EmptyStackException;
-import StackMio.MyStack;
+import uy.edu.um.prog2.adt.QueueMio.EmptyQueueException;
+import uy.edu.um.prog2.adt.QueueMio.MyQueue;
+import uy.edu.um.prog2.adt.StackMio.EmptyStackException;
+import uy.edu.um.prog2.adt.StackMio.MyStack;
 
 
-public class LinkedList<T> implements MyStack<T>, MyQueue,Mylist<T> {
+public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
     public Nodo<T> head;
     public Nodo<T> tail;
     public int size;
@@ -55,11 +55,11 @@ public class LinkedList<T> implements MyStack<T>, MyQueue,Mylist<T> {
 
     public void find(T value) {
         Nodo<T> nodo = head;
-        int contador=0;
+        int contador = 0;
         while (nodo != null) {
 
             if (nodo.variable == value) {
-                System.out.println(value + " se encuentra en la lista en el lugar "+contador);
+                System.out.println(value + " se encuentra en la lista en el lugar " + contador);
                 return;
 
             }
@@ -71,7 +71,7 @@ public class LinkedList<T> implements MyStack<T>, MyQueue,Mylist<T> {
 
     @Override
     public void push(T value) {
-         Nodo<T> node = new Nodo<>(value);
+        Nodo<T> node = new Nodo<>(value);
         node.next = head;
         head = node;
 
@@ -83,7 +83,7 @@ public class LinkedList<T> implements MyStack<T>, MyQueue,Mylist<T> {
 
     @Override
     public T pop() throws EmptyStackException {
-        if (size!=0) {
+        if (size != 0) {
             T val = head.variable;
             head = head.next;
 
@@ -108,7 +108,7 @@ public class LinkedList<T> implements MyStack<T>, MyQueue,Mylist<T> {
 
     @Override
     public void enqueue(Object value) {
-          Nodo<T> node = (Nodo<T>) new Nodo<>(value);
+        Nodo<T> node = (Nodo<T>) new Nodo<>(value);
         node.next = head;
         head = node;
 
@@ -120,8 +120,8 @@ public class LinkedList<T> implements MyStack<T>, MyQueue,Mylist<T> {
     }
 
     @Override
-    public Object dequeue() throws EmptyQueueException {
-         if (size==0) {
+    public T dequeue() throws EmptyQueueException {
+        if (size == 0) {
             throw new EmptyQueueException();
         }
         if (size <= 1) {
@@ -143,14 +143,14 @@ public class LinkedList<T> implements MyStack<T>, MyQueue,Mylist<T> {
 
     @Override
     public boolean contains(Object value) {
-         Nodo<T> nodo = head;
-        int contador=0;
+        Nodo<T> nodo = head;
+        int contador = 0;
         while (nodo != null) {
 
             if (nodo.variable == value) {
-                System.out.println(value + " se encuentra en la lista en el lugar "+contador);
+                System.out.println(value + " se encuentra en la lista en el lugar " + contador);
                 return true;
-            }else {
+            } else {
                 contador++;
                 nodo = nodo.next;
             }
@@ -162,22 +162,36 @@ public class LinkedList<T> implements MyStack<T>, MyQueue,Mylist<T> {
 
     @Override
     public int size() {
-        Integer size=0;
-        Nodo<T>pri=head;
-        while (pri!=null){
-            pri=head.next;
-            size++;
+        Integer listSize = 0;
+        Nodo<T> aux = head;
+
+        if (aux == null) {
+            return listSize;
         }
-        return size;
+
+        while (aux.next != null) {
+            aux = aux.next;
+            listSize++;
+        }
+        listSize++;
+
+        return listSize;
     }
+
 
     @Override
     public T get(int index) {
-        Nodo<T> nodo = head;
-        for (int i = 0; i < index; i++) {
-            nodo = nodo.next;
+        Nodo<T> it = head;
+
+        if (index == 0) {
+            return head.variable;
         }
-        return (T) nodo;
+
+        for (int i = 0; i < index; i++) {
+            it = it.next;
+        }
+
+        return it.variable;
     }
 
 
@@ -230,14 +244,14 @@ public class LinkedList<T> implements MyStack<T>, MyQueue,Mylist<T> {
 
     @Override
     public boolean Empty() {
-        if (size==0){
+        if (size == 0) {
             System.out.println("Esta Vacia ");
             return true;
 
+        } else {
+            System.out.println("No Esta Vacia, contiene " + size + " elementos");
+            return false;
         }
-        else {
-            System.out.println("No Esta Vacia, contiene "+size+" elementos");
-            return false;}
     }
 
     public class Nodo<T> {

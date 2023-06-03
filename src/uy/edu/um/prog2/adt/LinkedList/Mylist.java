@@ -1,4 +1,4 @@
-package LinkedList;
+package uy.edu.um.prog2.adt.LinkedList;
 
 public interface Mylist <T>{
 

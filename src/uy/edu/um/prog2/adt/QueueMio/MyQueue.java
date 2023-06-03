@@ -1,6 +1,4 @@
-package QueueMio;
-
-import java.util.function.Supplier;
+package uy.edu.um.prog2.adt.QueueMio;
 
 public interface MyQueue<T> {
     void enqueue(T value);

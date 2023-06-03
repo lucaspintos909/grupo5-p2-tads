@@ -1,22 +1,5 @@
-package SBT;
+package uy.edu.um.prog2.adt.BinarySearchTree;
 
-interface SearchTree {
-    void insert(int value);
-    boolean search(int value);
-    boolean delete(int value);
-}
-
-class TreeNode {
-    int value;
-    TreeNode left;
-    TreeNode right;
-
-    public TreeNode(int value) {
-        this.value = value;
-        left = null;
-        right = null;
-    }
-}
 
 class BinarySearchTree implements SearchTree {
     TreeNode root;
