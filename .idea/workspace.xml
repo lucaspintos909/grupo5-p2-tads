@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a4f4535e-68c0-4c3f-b9d2-d6c4e1a85cbd" name="Changes" comment="Subo todo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QLp1nhUqXnC2PBIyKwjdofGNbQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Users/Juanm/Desktop/Tads",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="StackMio" />
+      <recent name="QueueMio" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Juanm\Desktop\Tads\src\StackMio" />
+      <recent name="C:\Users\Juanm\Desktop\Tads\src\LinkedLista" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="LinkedLista" />
+      <recent name="StackMio" />
+      <recent name="QueueMio" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MylistTest.size">
+    <configuration name="MyStackTest.pop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StackMio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StackMio" />
+      <option name="MAIN_CLASS_NAME" value="StackMio.MyStackTest" />
+      <option name="METHOD_NAME" value="pop" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MylistTest.contains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedLista.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LinkedLista" />
+      <option name="MAIN_CLASS_NAME" value="LinkedLista.MylistTest" />
+      <option name="METHOD_NAME" value="contains" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MylistTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedLista.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LinkedLista" />
+      <option name="MAIN_CLASS_NAME" value="LinkedLista.MylistTest" />
+      <option name="METHOD_NAME" value="remove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MylistTest.reomve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedLista.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LinkedLista" />
+      <option name="MAIN_CLASS_NAME" value="LinkedLista.MylistTest" />
+      <option name="METHOD_NAME" value="reomve" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MylistTest.size" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedLista.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LinkedLista" />
+      <option name="MAIN_CLASS_NAME" value="LinkedLista.MylistTest" />
+      <option name="METHOD_NAME" value="size" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MylistTest.size" />
+        <item itemvalue="JUnit.MylistTest.contains" />
+        <item itemvalue="JUnit.MylistTest.remove" />
+        <item itemvalue="JUnit.MyStackTest.pop" />
+        <item itemvalue="JUnit.MylistTest.reomve" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4f4535e-68c0-4c3f-b9d2-d6c4e1a85cbd" name="Changes" comment="" />
+      <created>1685142511900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685142511900</updated>
+      <workItem from="1685142513438" duration="1754000" />
+      <workItem from="1685158200168" duration="11121000" />
+      <workItem from="1685170697765" duration="58000" />
+      <workItem from="1685170780492" duration="19000" />
+      <workItem from="1685483692596" duration="402000" />
+      <workItem from="1685484139062" duration="4532000" />
+      <workItem from="1685507073476" duration="6319000" />
+      <workItem from="1685513858861" duration="16000" />
+      <workItem from="1685567667705" duration="651000" />
+      <workItem from="1685590616270" duration="6975000" />
+      <workItem from="1685600321367" duration="2984000" />
+      <workItem from="1685603352062" duration="15000" />
+      <workItem from="1685739899145" duration="11161000" />
+    </task>
+    <task id="LOCAL-00001" summary="Subo todo">
+      <created>1685825936479</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685825936479</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Subo todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subo todo" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Tads$StackMio_Main.ic" NAME="StackMio.Main Coverage Results" MODIFIED="1685511971380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>StackMio.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Tads$MylistTest_size.ic" NAME="MylistTest.size Coverage Results" MODIFIED="1685747520969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>LinkedLista.*</FILTER>
+    </SUITE>
+  </component>
+</project>

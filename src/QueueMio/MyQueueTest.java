@@ -1,0 +1,60 @@
+package QueueMio;
+
+import LinkedLista.LinkedLista;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+class MyQueueTest {
+    MyQueue<Integer> queuell = new LinkedLista<>();
+
+    @Test
+    void enqueue() {
+        queuell.enqueue(10);
+        assertEquals(queuell.size(),1);
+
+    }
+
+    @Test
+    void dequeue()throws EmptyQueueException {
+        queuell.enqueue(10);
+        queuell.dequeue();
+        assertEquals(queuell.size(),0);
+        try {
+            queuell.dequeue();
+        }catch (EmptyQueueException e){
+            assertEquals(queuell.size(),0);
+
+        }
+    }
+
+    @Test
+    void contains() {
+        queuell.enqueue(10);
+        assertTrue(true, String.valueOf(queuell.contains(10)));
+    }
+
+    @Test
+    void size() {
+        queuell.enqueue(10);
+        queuell.enqueue(9);
+        assertEquals(queuell.size(),2);
+    }
+
+    @Test
+    void get() {
+        queuell.enqueue(7);
+
+        assertEquals(queuell.get(0),7);
+    }
+
+
+
+    @Test
+    void empty() {
+        queuell.enqueue(10);
+        queuell.enqueue(9);
+        assertFalse(false, String.valueOf(queuell.Empty()));
+
+    }
+
+}
