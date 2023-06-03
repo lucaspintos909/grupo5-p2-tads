@@ -1,7 +1,7 @@
 import uy.edu.um.prog2.adt.LinkedList.LinkedList;
 import org.junit.jupiter.api.Test;
-import uy.edu.um.prog2.adt.StackMio.EmptyStackException;
-import uy.edu.um.prog2.adt.StackMio.MyStack;
+import uy.edu.um.prog2.adt.Stack.EmptyStackException;
+import uy.edu.um.prog2.adt.Stack.MyStack;
 
 import static org.junit.jupiter.api.Assertions.*;
 

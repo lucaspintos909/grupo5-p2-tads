@@ -1,9 +1,9 @@
 package uy.edu.um.prog2.adt.LinkedList;
 
-import uy.edu.um.prog2.adt.QueueMio.EmptyQueueException;
-import uy.edu.um.prog2.adt.QueueMio.MyQueue;
-import uy.edu.um.prog2.adt.StackMio.EmptyStackException;
-import uy.edu.um.prog2.adt.StackMio.MyStack;
+import uy.edu.um.prog2.adt.Queue.EmptyQueueException;
+import uy.edu.um.prog2.adt.Queue.MyQueue;
+import uy.edu.um.prog2.adt.Stack.EmptyStackException;
+import uy.edu.um.prog2.adt.Stack.MyStack;
 
 
 public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
