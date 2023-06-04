@@ -4,25 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f4535e-68c0-4c3f-b9d2-d6c4e1a85cbd" name="Changes" comment="Cambiando nombre de LinkedLista a LinkedList">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/SBT/SearchTree.java" afterDir="false" />
+    <list default="true" id="a4f4535e-68c0-4c3f-b9d2-d6c4e1a85cbd" name="Changes" comment="Cambiando nombre a Queue y Stack">
+      <change afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/LinkedList/Nodo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/uy/edu/um/prog2/adt/BinarySearchTree/BinarySearchTreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/uy/edu/um/prog2/adt/LinkedList/LinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tads.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/LinkedList/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/Mylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/LinkedList/Mylist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList/MylistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MylistTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QueueMio/EmptyQueueException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/QueueMio/EmptyQueueException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QueueMio/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QueueMio/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/QueueMio/MyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QueueMio/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MyQueueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SBT/SBT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/SBT/SBT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackMio/EmptyStackException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/StackMio/EmptyStackException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackMio/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackMio/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/StackMio/MyStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StackMio/MyStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/MyStackTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/SBT/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/SBT/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/LinkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uy/edu/um/prog2/adt/LinkedList/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/uy/edu/um/prog2/adt/LinkedList/MyQueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/MyStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/uy/edu/um/prog2/adt/LinkedList/MyStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/MylistTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -86,9 +76,12 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="uy.edu.um.prog2.adt.LinkedList" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="uy.edu.um.prog2.adt.LinkedList" />
+      <recent name="uy.edu.um.prog2.adt.BinarySearchTree" />
       <recent name="LinkedLista" />
       <recent name="StackMio" />
       <recent name="QueueMio" />
@@ -189,7 +182,7 @@
       <workItem from="1685600321367" duration="2984000" />
       <workItem from="1685603352062" duration="15000" />
       <workItem from="1685739899145" duration="8826000" />
-      <workItem from="1685832655204" duration="2312000" />
+      <workItem from="1685832655204" duration="5108000" />
     </task>
     <task id="LOCAL-00001" summary="Cambiando nombre de LinkedLista a LinkedList">
       <created>1685833009881</created>
@@ -198,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685833009881</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Cambiando estructura del proyecto">
+      <created>1685835061499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685835061499</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Cambiando nombre a Queue y Stack">
+      <created>1685835122003</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685835122003</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +225,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Subo todo" />
     <MESSAGE value="Cambiando nombre de LinkedLista a LinkedList" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambiando nombre de LinkedLista a LinkedList" />
+    <MESSAGE value="Cambiando estructura del proyecto" />
+    <MESSAGE value="Cambiando nombre a Queue y Stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambiando nombre a Queue y Stack" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Tads$MylistTest_size.ic" NAME="MylistTest.size Coverage Results" MODIFIED="1685747520969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

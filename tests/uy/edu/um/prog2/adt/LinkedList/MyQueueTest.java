@@ -1,4 +1,5 @@
-import uy.edu.um.prog2.adt.LinkedList.LinkedList;
+package uy.edu.um.prog2.adt.LinkedList;
+
 import org.junit.jupiter.api.Test;
 import uy.edu.um.prog2.adt.Queue.EmptyQueueException;
 import uy.edu.um.prog2.adt.Queue.MyQueue;
@@ -6,7 +7,7 @@ import uy.edu.um.prog2.adt.Queue.MyQueue;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyQueueTest {
-    MyQueue<Integer> queuell = new LinkedList<Integer>();
+    MyQueue<Integer> queuell = new LinkedList<>();
 
     @Test
     void enqueue() {

@@ -1,16 +1,17 @@
+package uy.edu.um.prog2.adt.LinkedList;
+
 import org.junit.jupiter.api.Test;
-import uy.edu.um.prog2.adt.LinkedList.LinkedList;
-import uy.edu.um.prog2.adt.LinkedList.Mylist;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MylistTest {
+class LinkedListTest {
 
-    Mylist<Integer> listll=new LinkedList<Integer>();
+    Mylist<Integer> listll = new LinkedList<>();
+
     @Test
     void add() {
         listll.add(10);
-        assertEquals(listll.size(),1);
+        assertEquals(listll.size(), 1);
     }
 
     @Test
@@ -21,15 +22,16 @@ class MylistTest {
     void remove() {
         listll.add(10);
         listll.remove();
-        assertEquals(listll.size(),0);
+        assertEquals(listll.size(), 0);
     }
 
     @Test
     void size() {
         listll.add(10);
         listll.add(9);
-        assertEquals(listll.size(),2);
+        assertEquals(listll.size(), 2);
     }
+
     @Test
     void contains() {
         listll.add(10);
