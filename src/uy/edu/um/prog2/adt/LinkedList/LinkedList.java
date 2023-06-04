@@ -100,15 +100,12 @@ public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
 
     @Override
     public T peek() {
-        T val = head.variable;
-
-        return val;
-
+        return head.variable;
     }
 
     @Override
-    public void enqueue(Object value) {
-        Nodo<T> node = (Nodo<T>) new Nodo<>(value);
+    public void enqueue(T value) {
+        Nodo<T> node = new Nodo<>(value);
         node.next = head;
         head = node;
 
@@ -134,7 +131,7 @@ public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
             return val;
         }
 
-        Nodo<T> secondlast = (Nodo<T>) get(size - 2);
+        Nodo<T> secondlast = new Nodo<>(get(size - 2));
         T val = tail.variable;
         tail = secondlast;
         tail.next = null;
@@ -162,7 +159,7 @@ public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
 
     @Override
     public int size() {
-        Integer listSize = 0;
+        int listSize = 0;
         Nodo<T> aux = head;
 
         if (aux == null) {
@@ -202,8 +199,8 @@ public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
         if (index == size - 1) {
             return delatelast();
         }
-        Nodo<T> prev = (Nodo<T>) get(index - 1);
-        T val = (T) prev.next.variable;
+        Nodo<T> prev = new Nodo<>(get(size - 1));
+        T val = prev.next.variable;
 
         prev.next = prev.next.next;
         return val;
@@ -225,7 +222,7 @@ public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
             return remove();
         }
 
-        Nodo<T> secondlast = (Nodo<T>) get(size - 2);
+        Nodo<T> secondlast = new Nodo<>(get(size - 2));
         T val = tail.variable;
         tail = secondlast;
         tail.next = null;
@@ -253,20 +250,4 @@ public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
             return false;
         }
     }
-
-    public class Nodo<T> {
-        public T variable;
-        public Nodo<T> next;
-
-        public Nodo(T variable) {
-            this.variable = variable;
-        }
-
-        public Nodo(T variable, Nodo<T> next) {
-            this.variable = variable;
-            this.next = next;
-
-        }
-    }
-
 }
