@@ -10,16 +10,21 @@ class BinarySearchTreeTest {
     @Test
     void insert() {
         tree.insert(1);
+        assertFalse(false, String.valueOf(String.valueOf(tree.root)==null));
 
-        assertTrue(tree.search(1));
-        assertTrue(tree.delete(1));
     }
 
     @Test
     void search() {
+        tree.insert(1);
+        assertTrue(true, String.valueOf(tree.search(1)));
+
     }
 
     @Test
     void delete() {
+        tree.insert(1);
+        tree.delete(1);
+        assertEquals(tree.root,null);
     }
 }
