@@ -43,6 +43,9 @@ class MyStackTest {
 
     @Test
     void get() {
+        stackll.push(7);
+        System.out.println(stackll.get(0));
+        assertEquals(stackll.get(0),7);
     }
 
     @Test
