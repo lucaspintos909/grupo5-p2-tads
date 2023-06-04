@@ -11,8 +11,8 @@ class BinarySearchTreeTest {
     void insert() {
         tree.insert(1);
 
-        assertTrue(tree.delete(1));
         assertTrue(tree.search(1));
+        assertTrue(tree.delete(1));
     }
 
     @Test
