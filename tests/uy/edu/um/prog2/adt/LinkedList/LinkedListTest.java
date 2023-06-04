@@ -21,7 +21,7 @@ class LinkedListTest {
     @Test
     void remove() {
         listll.add(10);
-        listll.remove();
+        listll.remove(10);
         assertEquals(listll.size(), 0);
     }
 
