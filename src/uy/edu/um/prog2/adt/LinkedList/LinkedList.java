@@ -9,168 +9,115 @@ import uy.edu.um.prog2.adt.Stack.MyStack;
 public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
     public Nodo<T> head;
     public Nodo<T> tail;
-    public int size;
 
-    public LinkedList() {
-        this.size = 0;
+    @Override
+    public void add(T value) {
+        addLast(value);
     }
 
-    public void add(T val) {
-        Nodo<T> node = new Nodo<>(val);
-        node.next = head;
-        head = node;
+    public void addLast(T value) {
+        /*
+         * Para chequear que no se agregue un null
+         */
+        if (value != null) {
 
-        if (tail == null) {
-            tail = head;
-        }
+            Nodo<T> newNode = new Nodo<>(value);
 
-        size += 1;
-
-    }
-
-    public void addlast(T val) {
-        Nodo<T> node = new Nodo<>(val);
-        tail.next = node;
-        tail = node;
-        size++;
-
-    }
-
-    public void insert(T val, int index) {
-        if (index == 0) {
-            add(val);
-            return;
-        }
-        if (index == size) {
-            addlast(val);
-            return;
-        }
-        Nodo<T> temp = head;
-        for (int i = 1; i < index; i++) {
-            temp = temp.next;
-        }
-        temp.next = new Nodo<>(val, temp.next);
-        size++;
-    }
-
-    public void find(T value) {
-        Nodo<T> nodo = head;
-        int contador = 0;
-        while (nodo != null) {
-
-            if (nodo.variable == value) {
-                System.out.println(value + " se encuentra en la lista en el lugar " + contador);
-                return;
-
+            if (this.head == null) {
+                this.head = newNode;
+            } else {
+                this.tail.next = newNode;
             }
-            contador++;
-            nodo = nodo.next;
+            this.tail = newNode;
         }
-        System.out.println(value + " no se encuentra en la lista");
+    }
+
+    public void addFirst(T value) {
+        /*
+         * Para chequear que no se agregue un null
+         */
+        if (value != null) {
+
+            Nodo<T> newNode = new Nodo<>(value);
+
+            if (this.head == null) {
+                this.tail = newNode;
+            } else {
+                newNode.next = this.head;
+            }
+            this.head = newNode;
+        }
     }
 
     @Override
     public void push(T value) {
-        Nodo<T> node = new Nodo<>(value);
-        node.next = head;
-        head = node;
-
-        if (tail == null) {
-            tail = head;
-        }
-        size += 1;
+        addLast(value);
     }
 
     @Override
     public T pop() throws EmptyStackException {
-        if (size != 0) {
-            T val = head.variable;
-            head = head.next;
-
-            if (head == null) {
-                tail = null;
-            }
-            size--;
-            return val;
-        } else {
+        if (this.tail == null) {
             throw new EmptyStackException();
-
         }
+        return removeLast();
     }
 
     @Override
     public T peek() {
-        return head.variable;
+        if (this.tail != null) {
+            return this.tail.variable;
+        } else {
+            return null;
+        }
     }
 
     @Override
     public void enqueue(T value) {
-        Nodo<T> node = new Nodo<>(value);
-        node.next = head;
-        head = node;
-
-        if (tail == null) {
-            tail = head;
-        }
-
-        size += 1;
+        addFirst(value);
     }
 
     @Override
     public T dequeue() throws EmptyQueueException {
-        if (size == 0) {
+        if (head == null) {
             throw new EmptyQueueException();
         }
-        if (size <= 1) {
-            T val = head.variable;
-            head = head.next;
-            if (head == null) {
-                tail = null;
-            }
-            size--;
-            return val;
-        }
 
-        Nodo<T> secondlast = new Nodo<>(get(size - 2));
-        T val = tail.variable;
-        tail = secondlast;
-        tail.next = null;
-        return val;
+        return removeLast();
     }
 
     @Override
-    public boolean contains(Object value) {
-        Nodo<T> nodo = head;
-        int contador = 0;
-        while (nodo != null) {
+    public boolean contains(T value) {
+        boolean contains = false;
+        Nodo<T> aux = this.head;
 
-            if (nodo.variable == value) {
-                System.out.println(value + " se encuentra en la lista en el lugar " + contador);
-                return true;
-            } else {
-                contador++;
-                nodo = nodo.next;
-            }
-
+        while (aux != null && !aux.variable.equals(value)) {
+            aux = aux.next;
         }
-        System.out.println(value + " no se encuentra en la lista");
-        return false;
+
+        /*
+         * Si no llega al final de la lista es que se encontro el valor
+         */
+        if (aux != null) {
+            contains = true;
+        }
+
+        return contains;
     }
+
 
     @Override
     public int size() {
         int listSize = 0;
-        Nodo<T> aux = head;
+        Nodo<T> aux = this.head;
 
         if (aux == null) {
             return listSize;
         }
 
-        while (aux.next != null) {
+        while (aux != null) {
             aux = aux.next;
             listSize++;
         }
-        listSize++;
 
         return listSize;
     }
@@ -178,55 +125,81 @@ public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
 
     @Override
     public T get(int index) {
-        Nodo<T> it = head;
+        T returnValue = null;
+        Nodo<T> temp = this.head;
 
-        if (index == 0) {
-            return head.variable;
+        int aux = 0;
+        while (temp != null && aux != index) {
+
+            temp = temp.next;
+            aux++;
+
         }
 
-        for (int i = 0; i < index; i++) {
-            it = it.next;
+        if (aux == index) {
+            returnValue = temp.variable;
         }
 
-        return it.variable;
+        /* Si llegó al final de la lista y no encontro el elemento se devuelve null */
+        return returnValue;
     }
 
+    public void remove(T value) {
+        Nodo<T> anterior = null;
+        Nodo<T> siguiente = this.head;
 
-    public T delete(int index) {
-        if (index == 0) {
-            return remove();
+        /* Guardo el que busco y el anterior */
+        while (siguiente != null && !siguiente.variable.equals(value)) {
+            anterior = siguiente;
+            siguiente = siguiente.next;
         }
-        if (index == size - 1) {
-            return delatelast();
+
+        if (siguiente != null) {
+
+            if (siguiente == this.head && siguiente != this.tail) {
+                /*
+                 * Sí es el primero y no el último
+                 */
+                Nodo<T> temp = this.head;
+                this.head = this.tail.next;
+                temp.next = null;
+
+            } else if (siguiente == this.tail && siguiente != this.head) {
+                /*
+                 * Sí es el último y no el primero
+                 */
+                anterior.next = null;
+                this.tail = anterior;
+
+            } else if (siguiente == this.tail && siguiente == this.head) {
+                /*
+                 * Si es el único valor que hay en la lista
+                 */
+                this.head = null;
+                this.tail = null;
+
+            } else {
+                /*
+                 * Si esta en el diome
+                 */
+                anterior.next = siguiente.next;
+                siguiente.next = null;
+            }
         }
-        Nodo<T> prev = new Nodo<>(get(size - 1));
-        T val = prev.next.variable;
-
-        prev.next = prev.next.next;
-        return val;
-
     }
 
-    public T remove() {
-        T val = head.variable;
-        head = head.next;
-        if (head == null) {
-            tail = null;
-        }
-        size--;
-        return val;
-    }
+    public T removeLast() {
+        T valueToRemove = null;
 
-    public T delatelast() {
-        if (size <= 1) {
-            return remove();
+        if (this.tail != null) {
+            /*
+             * Guardo el valor y después lo borro
+             * */
+            valueToRemove = this.tail.variable;
+            remove(valueToRemove);
         }
 
-        Nodo<T> secondlast = new Nodo<>(get(size - 2));
-        T val = tail.variable;
-        tail = secondlast;
-        tail.next = null;
-        return val;
+        return valueToRemove;
     }
 
     public void display() {
@@ -241,12 +214,12 @@ public class LinkedList<T> implements MyStack<T>, MyQueue<T>, Mylist<T> {
 
     @Override
     public boolean Empty() {
-        if (size == 0) {
+        if (head == null) {
             System.out.println("Esta Vacia ");
             return true;
 
         } else {
-            System.out.println("No Esta Vacia, contiene " + size + " elementos");
+            System.out.println("No Esta Vacia, contiene " + size() + " elementos");
             return false;
         }
     }
