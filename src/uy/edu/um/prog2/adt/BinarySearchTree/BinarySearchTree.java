@@ -1,104 +1,170 @@
 package uy.edu.um.prog2.adt.BinarySearchTree;
 
+import uy.edu.um.prog2.adt.LinkedList.LinkedList;
 
-class BinarySearchTree implements SearchTree {
-    TreeNode root;
+public class BinarySearchTree<T extends Comparable<T>, V> implements MyBinarySearchTree<T, V> {
 
-    public BinarySearchTree() {
-        root = null;
+    private TreeNode<T, V> root;
+
+    @Override
+    public void add(T key, V valor) {
+        root = insert(key, valor, root);
     }
 
-    public void insert(int value) {
-        root = insertNode(root, value);
-    }
-
-    private TreeNode insertNode(TreeNode root, int value) {
+    private TreeNode<T, V> insert(T key, V valor, TreeNode<T, V> root) {
+        TreeNode<T, V> result = null;
         if (root == null) {
-            root = new TreeNode(value);
-            return root;
+            result = new TreeNode<>(key, valor);
+        } else if (key.compareTo(root.getKey()) > 0) {
+            root.setRight(insert(key, valor, root.getRight()));
+            result = root;
+        } else if (key.compareTo(root.getKey()) < 0) {
+            root.setLeft(insert(key, valor, root.getLeft()));
+            result = root;
         }
-
-        if (value < root.value) {
-            root.left = insertNode(root.left, value);
-        } else if (value > root.value) {
-            root.right = insertNode(root.right, value);
-        }
-
-        return root;
+        return result;
     }
 
-    public boolean search(int value) {
-        return searchNode(root, value);
+    @Override
+    public void remove(T key) {
+        root = delete(key, root);
     }
 
-    private boolean searchNode(TreeNode root, int value) {
+    private TreeNode<T, V> delete(T key, TreeNode<T, V> root) {
+        TreeNode<T, V> resultado = root;
+
+        if (root != null) {
+            /*
+             *Para evitar errores si se pasa un null como nodo
+             */
+            if (key.compareTo(root.getKey()) < 0) {
+                root.setLeft(delete(key, root.getLeft()));
+            } else if (key.compareTo(root.getKey()) > 0) {
+                root.setRight(delete(key, root.getRight()));
+            } else {
+                if (root.getRight() == null && root.getLeft() == null) {
+                    resultado = null;
+                } else if (root.getLeft() != null) {
+                    TreeNode<T, V> aux = getMax(root.getLeft());
+                    root.setValue(aux.getValue());
+                    root.setKey(aux.getKey());
+                    root.setLeft(delete(aux.getKey(), root.getLeft()));
+                } else {
+                    TreeNode<T, V> aux = getMin(root.getRight());
+                    root.setValue(aux.getValue());
+                    root.setKey(aux.getKey());
+                    root.setRight(delete(aux.getKey(), root.getRight()));
+                }
+            }
+        }
+
+        return resultado;
+    }
+
+    private TreeNode<T, V> getMin(TreeNode<T, V> root) {
+        TreeNode<T, V> resultado;
+
+        if (root.getLeft() == null) {
+            resultado = root;
+        } else {
+            resultado = getMin(root.getLeft());
+        }
+        return resultado;
+    }
+
+    private TreeNode<T, V> getMax(TreeNode<T, V> root) {
+        TreeNode<T, V> resultado;
+
+        if (root.getRight() == null) {
+            resultado = root;
+        } else {
+            resultado = getMax(root.getRight());
+        }
+        return resultado;
+    }
+
+
+    @Override
+    public boolean contains(T key) {
+        return search(this.root, key);
+    }
+
+    private boolean search(TreeNode<T, V> root, T key) {
         if (root == null) {
             return false;
-        }
-
-        if (value == root.value) {
+        } else if (root.getKey().compareTo(key) == 0) {
             return true;
-        } else if (value < root.value) {
-            return searchNode(root.left, value);
-        } else {
-            return searchNode(root.right, value);
+        } else if (root.getKey().compareTo(key) > 0) {
+            return search(root.getLeft(), key);
         }
+        return search(root.getRight(), key);
     }
 
-    public boolean delete(int value) {
-        TreeNode parentNode = null;
-        TreeNode currentNode = root;
-
-        while (currentNode != null && currentNode.value != value) {
-            parentNode = currentNode;
-            if (value < currentNode.value) {
-                currentNode = currentNode.left;
-            } else {
-                currentNode = currentNode.right;
-            }
-        }
-
-        if (currentNode == null) {
-            return false; // Node to delete not found
-        }
-
-        // Case 1: No child or one child
-        if (currentNode.left == null) {
-            if (parentNode == null) {
-                root = currentNode.right;
-            } else if (currentNode == parentNode.left) {
-                parentNode.left = currentNode.right;
-            } else {
-                parentNode.right = currentNode.right;
-            }
-        } else if (currentNode.right == null) {
-            if (parentNode == null) {
-                root = currentNode.left;
-            } else if (currentNode == parentNode.left) {
-                parentNode.left = currentNode.left;
-            } else {
-                parentNode.right = currentNode.left;
-            }
-        } else {
-            // Case 2: Two children
-            TreeNode successorParent = currentNode;
-            TreeNode successor = currentNode.right;
-
-            while (successor.left != null) {
-                successorParent = successor;
-                successor = successor.left;
-            }
-
-            if (successorParent != currentNode) {
-                successorParent.left = successor.right;
-            } else {
-                successorParent.right = successor.right;
-            }
-
-            currentNode.value = successor.value;
-        }
-
-        return true;
+    @Override
+    public TreeNode<T, V> find(T key) {
+        return findA(key, root);
     }
+
+    private TreeNode<T, V> findA(T key, TreeNode<T, V> root) {
+        if (root == null) {
+            return null;
+        } else if (root.getKey().compareTo(key) == 0) {
+            return root;
+        } else if (root.getKey().compareTo(key) > 0) {
+            return findA(key, root.getLeft());
+        }
+        return findA(key, root.getRight());
+    }
+
+
+    @Override
+    public LinkedList<TreeNode<T, V>> preOrder() {
+        LinkedList<TreeNode<T, V>> lista = new LinkedList<>();
+        return preOrder(lista, root);
+    }
+
+    private LinkedList<TreeNode<T, V>> preOrder(LinkedList<TreeNode<T, V>> lista, TreeNode<T, V> root) {
+        if (root != null) {
+            lista.add(root);
+            preOrder(lista, root.getLeft());
+            preOrder(lista, root.getRight());
+        }
+        return lista;
+    }
+
+    @Override
+    public LinkedList<TreeNode<T, V>> inOrder() {
+        LinkedList<TreeNode<T, V>> lista = new LinkedList<>();
+        return inOrder(lista, root);
+    }
+
+    private LinkedList<TreeNode<T, V>> inOrder(LinkedList<TreeNode<T, V>> lista, TreeNode<T, V> root) {
+        if (root.getLeft() != null) {
+            inOrder(lista, root.getLeft());
+        }
+        lista.add(root);
+        if (root.getRight() != null) {
+            inOrder(lista, root.getRight());
+        }
+        return lista;
+    }
+
+    @Override
+    public LinkedList<TreeNode<T, V>> postOrder() {
+        LinkedList<TreeNode<T, V>> lista = new LinkedList<>();
+        return postOrder(lista, root);
+    }
+
+    private LinkedList<TreeNode<T, V>> postOrder(LinkedList<TreeNode<T, V>> lista, TreeNode<T, V> root) {
+        if (root.getLeft() != null) {
+            postOrder(lista, root.getLeft());
+        }
+        if (root.getRight() != null) {
+            postOrder(lista, root.getRight());
+        }
+        lista.add(root);
+        return lista;
+    }
+
 }
 
