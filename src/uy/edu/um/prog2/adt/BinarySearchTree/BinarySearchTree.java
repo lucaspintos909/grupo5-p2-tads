@@ -148,7 +148,6 @@ public class BinarySearchTree<T extends Comparable<T>, V> implements MyBinarySea
         }
         return lista;
     }
-
     @Override
     public LinkedList<TreeNode<T, V>> postOrder() {
         LinkedList<TreeNode<T, V>> lista = new LinkedList<>();
@@ -156,14 +155,20 @@ public class BinarySearchTree<T extends Comparable<T>, V> implements MyBinarySea
     }
 
     private LinkedList<TreeNode<T, V>> postOrder(LinkedList<TreeNode<T, V>> lista, TreeNode<T, V> root) {
+
         if (root.getLeft() != null) {
             postOrder(lista, root.getLeft());
-        }
+            }
+
         if (root.getRight() != null) {
             postOrder(lista, root.getRight());
         }
+
         lista.add(root);
         return lista;
+    }
+    public TreeNode<T, V> getRoot() {
+        return root;
     }
 
 }
