@@ -1,10 +1,12 @@
 package uy.edu.um.prog2.adt.Heap;
 
-public interface MyHeap<T extends Comparable<T>,V> {
-    void add(T key,V value);
-
-    void return_remove(T value) throws NoSuchElementException;
-
-    void size();
+public interface MyHeap<T extends Comparable<T>> {
+    void insert(T value);
+    T deleteMin() throws EmptyHeapException;
+    T deleteMax() throws EmptyHeapException;
+    int size();
+    boolean isEmpty();
+    T getMin();
+    T getMax();
 
 }
