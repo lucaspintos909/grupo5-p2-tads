@@ -61,10 +61,29 @@ public class Heap<T extends Comparable<T>> implements MyHeap<T> {
         }
     }
 
+    public T deleteLast()throws EmptyHeapException {
+        if (this.size == 0) {
+            throw new EmptyHeapException("");
+        }
+        if (this.size == 1) {
+            T eliminado = this.heap[0];
+            this.heap[0] = this.heap[this.size--];
+            this.minHeapify(0);
+            return eliminado;
+
+        }
+        else {
+            throw new EmptyHeapException("hay mas de un elemento");
+        }
+
+
+    }
+
     public T deleteMin() throws EmptyHeapException {
         if (this.size == 0) {
             throw new EmptyHeapException("");
-        } else {
+        }
+        else {
             T eliminado = this.heap[1];
             this.heap[1] = this.heap[this.size--];
             this.minHeapify(1);
@@ -75,7 +94,8 @@ public class Heap<T extends Comparable<T>> implements MyHeap<T> {
     public T deleteMax() throws EmptyHeapException {
         if (this.size == 0) {
             throw new EmptyHeapException("");
-        } else {
+        }
+        else {
             T eliminado = this.heap[1];
             this.heap[1] = this.heap[this.size--];
             this.maxHeapify(1);
