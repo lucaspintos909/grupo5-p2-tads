@@ -94,4 +94,15 @@ class MyHeapTest {
 
         assertEquals(8, heap.getMax());
     }
+    @Test
+    void heapException(){
+        Heap<Integer> heap = new Heap<>(5, false);
+        try {
+            heap.deleteMax();
+            fail("el heap esta vacio ");
+        } catch (EmptyHeapException e) {
+
+        }
+    }
+
 }

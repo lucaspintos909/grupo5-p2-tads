@@ -58,4 +58,16 @@ class MyHashTest {
         hash.add(3, "Three");
         assertEquals(3,hash.size());
     }
+    @Test
+    void addFullHashException() {
+        Hash<Integer, String> hash = new Hash<>(3);
+        try {
+            hash.add(1, "One");
+            hash.add(2, "Two");
+            hash.add(3, "Three");
+            hash.add(4, "Four");
+            fail("El hash esta lleno.");
+        } catch (FullHashException e) {
+        }
+    }
 }
