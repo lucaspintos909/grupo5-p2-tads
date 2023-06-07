@@ -106,8 +106,7 @@ class BinarySearchTreeTest {
         tree.add(7,"root-right-right");
 
         assertEquals("root-left-left",tree.postOrder().get(0).getValue());
-        assertEquals("root-left-right",tree.postOrder().get(1).getValue());
-
+        assertEquals("root-left",tree.postOrder().get(1).getValue());
 
     }
 }
