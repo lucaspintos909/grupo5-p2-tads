@@ -117,10 +117,10 @@ public class BinarySearchTree<T extends Comparable<T>, V> implements MyBinarySea
     }
 
 
+    LinkedList<TreeNode<T, V>> listaPreOrder = new LinkedList<>();
     @Override
     public LinkedList<TreeNode<T, V>> preOrder() {
-        LinkedList<TreeNode<T, V>> lista = new LinkedList<>();
-        return preOrder(lista, root);
+        return preOrder(listaPreOrder, root);
     }
 
     private LinkedList<TreeNode<T, V>> preOrder(LinkedList<TreeNode<T, V>> lista, TreeNode<T, V> root) {
@@ -132,10 +132,10 @@ public class BinarySearchTree<T extends Comparable<T>, V> implements MyBinarySea
         return lista;
     }
 
+    LinkedList<TreeNode<T, V>> listaInOrder = new LinkedList<>();
     @Override
     public LinkedList<TreeNode<T, V>> inOrder() {
-        LinkedList<TreeNode<T, V>> lista = new LinkedList<>();
-        return inOrder(lista, root);
+        return inOrder(listaInOrder, root);
     }
 
     private LinkedList<TreeNode<T, V>> inOrder(LinkedList<TreeNode<T, V>> lista, TreeNode<T, V> root) {
@@ -148,10 +148,10 @@ public class BinarySearchTree<T extends Comparable<T>, V> implements MyBinarySea
         }
         return lista;
     }
+    LinkedList<TreeNode<T, V>> listaPostOrder = new LinkedList<>();
     @Override
     public LinkedList<TreeNode<T, V>> postOrder() {
-        LinkedList<TreeNode<T, V>> lista = new LinkedList<>();
-        return postOrder(lista, root);
+        return postOrder(listaPostOrder, root);
     }
 
     private LinkedList<TreeNode<T, V>> postOrder(LinkedList<TreeNode<T, V>> lista, TreeNode<T, V> root) {
